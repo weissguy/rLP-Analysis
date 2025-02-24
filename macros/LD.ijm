@@ -1,9 +1,7 @@
 // script to a) extract perimeter from blue channel and b) analyze particles w/i region in green channel
 
 #@ File (label = "Input directory", style = "directory") inputPath
-// inputBluePath = "G:/My Drive/Tsai Images/2024-07-12 LD imaging set CFLC/pre240816/blue_channel/"
 #@ File (label = "Output directory", style = "directory") outputPath
-// "C:/Users/jaked/Documents/Tsai2024/TsaiLipidomics/data/2024-07-12/pre240816/"
 
 
 
@@ -48,8 +46,9 @@ function LD(image) {
 	// manually convert to binary using threshold
 	waitForUser("Set manual threshold (Ctrl+Shift+T)");
 	
-	// .18 microns <= radius <= 2 microns
-	run("Particle Analyser", "surface_area enclosed_volume min=0.0238 max=33.245 surface_resampling=2 surface=Gradient split=0.000 volume_resampling=2");
+	// .2 microns <= radius <= 2 microns
+	// 3D analysis uses volume constraint for min, max particle size
+	run("Particle Analyser", "surface_area enclosed_volume min=0.0335 max=33.51 surface_resampling=2 surface=Gradient split=0.000 volume_resampling=2");
 
 	// write to csv
 	saveAs("Results", outputPath + File.separator + image + "_LD.csv");
