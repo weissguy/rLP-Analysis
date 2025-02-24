@@ -12,7 +12,7 @@ files = Array.sort(files);
 
 // create output file
 f = File.open(outputPath + File.separator + "LD.csv");
-print(f, "Image,n,Avg Vol,Avg SA,Integrated Intensity Density, Subiculum Area, Z Stack");
+print(f, "Image,n,Avg Vol,Avg SA,Integrated Intensity Density,Subiculum Area,Z Stack");
 File.close(f);
 	
 for (i = 0; i < files.length; i++) {
