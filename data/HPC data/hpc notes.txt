@@ -1,0 +1,76 @@
+amyloid train on:
+mouse 18 _ slice b1
+mouse 25 f slice b1
+mouse 27 f slice b2
+mouse 30 f slice b2
+
+the classifier works really poorly on images with low amyloid (thinks high background are plaques) -- m29, m31
+made a new classifier trained on these! jake_amyloid_29_31
+
+
+microglia train on:
+mouse 18 _ slice b1
+mouse 25 f slice b1
+mouse 29 m slice b1
+mouse 30 f slice b2
+
+redo with lower min. plaque size (500 um^3?) -- done
+
+I messed up and accidentally deleted the microglia surface for 21f_b2 and 30f_b1. the imaris image does not match the data.
+
+-----------------------
+
+5_f_b1 has a huge gap in microglia, staining artifact? hpc roi selection might not be accurate
+5_f_b2 has a huge cluster of amyloid in the bottom left corner
+7_m_b1 has d54d2 staining along dentate gyrus
+
+
+amyloid train on:
+mouse 1f slice b1
+mouse 3m slice b2
+mouse 11m slice b1
+mouse 14m slice b1
+
+
+biggest variability in counting plaques comes from volume filter. 
+min. amyloid plaque size for all classifiers. -- for now, (4/3)*pi*(8^3)~=2000 um^3
+ - TODO: if this value is good, go back and modify 18-32 classifier, recollect data
+
+redo with lower min. plaque size (500 um^3?)
+
+
+
+microglia train on:
+mouse 1f slice b1
+mouse 4m slice b1
+mouse 10f slice b2
+mouse 13m slice b2
+
+
+min. microglia size for all classifiers. -- for now, 0 um^3
+
+
+-----------------------
+
+
+40_f_b1 has a dim circular region in bottom right of hpc
+
+min amyloid size -- for now, 500 um^3
+
+amyloid train on:
+mouse 33m slice b1
+mouse 36m slice b2
+mouse 40f slice b1
+
+amyloid classifier does not seem to do great with the high background stuff.
+
+microglia train on:
+mouse 33m slice b2
+mouse 37f slice b1
+mouse 40f slice b1
+
+
+
+
+
+

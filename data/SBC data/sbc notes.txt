@@ -1,0 +1,39 @@
+1-16:
+
+imagej ld bodipy channel thresholds:
+
+min thresholds
+mouse 8m_c1: 14166
+mouse 10f_c1: 14173
+mouse 10f_c2: 12108
+mouse 11m_c1: 9780
+mouse 14m_c1: 7842
+
+avg min threshold: 11613.8
+
+max threshold: 50000
+
+-- ditched this. threshold each image individually. 
+-- NEED to redo 7m_c1 segmentation
+
+
+
+18-32:
+
+
+m24_c1 has no lipid droplets?? also, double check roi selection.
+m29_c1 - m32_c2 have really few lipid droplets
+
+
+24m_c1 has very nice looking microglia. not too dense, lots of star branching
+
+-- previously ran 3D LD script on 18-32. is this close enough to our data for 1-16?
+-- NEED to redo 24f_c2 segmentation
+
+-- never converted czi to imaris for: 26f_c1, 31m_c1
+
+
+
+
+33-40:
+??

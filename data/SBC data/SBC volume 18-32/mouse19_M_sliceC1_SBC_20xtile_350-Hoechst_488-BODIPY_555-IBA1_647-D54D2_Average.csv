@@ -1,0 +1,6 @@
+
+Average
+ ==================== 
+Variable,Min,Max,Mean,StdDev,Median,Percentile 25%,Percentile 75%,Sum,Count,Unit,Category,Collection,Time,
+Area,743465.875,743465.875,743465.875,0.000,743465.875,743465.875,743465.875,743465.875,1,µm^2,Surface,,1,
+Volume,18143518.000,18143518.000,18143518.000,0.000,18143518.000,18143518.000,18143518.000,18143518.000,1,µm^3,Surface,,1,
