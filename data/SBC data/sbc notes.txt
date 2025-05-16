@@ -1,25 +1,37 @@
 1-16:
 
-imagej ld bodipy channel thresholds:
+min bodipy thresholds:
+4m_c1: 13878
+9f_c2: 8196
+10f_c1: 14135
+10f_c2: 13267
+15f_c1: 11719
 
-min thresholds
-mouse 8m_c1: 14166
-mouse 10f_c1: 14173
-mouse 10f_c2: 12108
-mouse 11m_c1: 9780
-mouse 14m_c1: 7842
 
-avg min threshold: 11613.8
+avg min threshold: 12239
 
 max threshold: 50000
 
--- ditched this. threshold each image individually. 
--- NEED to redo 7m_c1 segmentation
+7m_c1 and 7m_c2 are just hard to segment. high background i think.
+
+
 
 
 
 18-32:
 
+
+min bodipy thresholds:
+19m_c2: 16191
+20f_c1: 13107
+26f_c1: 14392
+29m_c1: 13111
+32m_c1: 13695
+
+
+avg min threshold: 14099
+
+max threshold: 50000
 
 m24_c1 has no lipid droplets?? also, double check roi selection.
 m29_c1 - m32_c2 have really few lipid droplets
@@ -30,7 +42,7 @@ m29_c1 - m32_c2 have really few lipid droplets
 -- previously ran 3D LD script on 18-32. is this close enough to our data for 1-16?
 -- NEED to redo 24f_c2 segmentation
 
--- never converted czi to imaris for: 26f_c1, 31m_c1
+-- never converted czi to imaris for: 26f_c1, 31m_c1 (check: is this true?)
 
 
 
